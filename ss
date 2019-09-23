@@ -25,9 +25,7 @@ PROXY = select,Auto,1,2,3,4
 # HBO = select,1,2,3,4
 # Fox = select,1,2,3,4
 # 国际媒体策略组
-ForeignMedia = select,PROXY,1,2,3,4
-# 国内媒体策略组
-DomesticMedia = select,DIRECT,1,2,3,4
+国外影视 = select,PROXY,1,2,3,4
 # Apple 服务策略组
 Apple = select,DIRECT,1,2,3,4
 # Telegram
@@ -110,10 +108,10 @@ DOMAIN-SUFFIX,zhuichaguoji.org,REJECT
 
 # Advertising 广告（以及隐私追踪）
 RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Unbreak.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list,Advertising
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list,广告
 
 # Hijacking 劫持（运营商及臭名昭著的网站和应用）
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list,Hijacking
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list,劫持
 
 # 自定义多区域媒体应用
 # (更多自定义请查阅 https://github.com/ConnersHua/Profiles/tree/master/Surge/Ruleset/Media)
@@ -125,19 +123,16 @@ RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Rule
 # ForeignMedia 媒体应用
 # 影视：Youtube、Netflix、Amazon Prime Video、Fox、HBO、Hulu、PBS、BBC iPlayer、All4、myTV_SUPER、encoreTVB、ViuTV、AbemaTV、Bahamut、KKTV、Line TV、LiTV、Pornhub
 # 音乐：Spotify、JOOX、Pandora、KKBOX
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/ForeignMedia.list,ForeignMedia
-
-# DomesticMedia 媒体应用（愛奇藝台灣站、bilibili 港澳台限定）
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/DomesticMedia.list,DomesticMedia
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/ForeignMedia.list,国外影视
 
 # Telegram
 # RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list,Telegram
 
 # Global 全球加速
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list,国外网站
 
 # Apple 服务
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Apple.list,Apple
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Apple.list,苹果服务
 
 # China 中国直连
 RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list,DIRECT
